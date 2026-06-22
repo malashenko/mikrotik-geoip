@@ -1,9 +1,4 @@
 /ip firewall address-list remove [find list=ru]
-add list=ru address=# Country: Russia (RU) comment="GeoIP-RU"
-add list=ru address=# Address family: IPv4 comment="GeoIP-RU"
-add list=ru address=# Delegation status: Allocated || Assigned comment="GeoIP-RU"
-add list=ru address=# Export mode: Aggregated comment="GeoIP-RU"
-add list=ru address=# comment="GeoIP-RU"
 add list=ru address=2.56.24.0/22 comment="GeoIP-RU"
 add list=ru address=2.56.88.0/22 comment="GeoIP-RU"
 add list=ru address=2.56.180.0/22 comment="GeoIP-RU"

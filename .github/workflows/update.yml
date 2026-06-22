@@ -1,34 +1,32 @@
 name: Update RU GeoIP
 
 on:
-workflow_dispatch:
-schedule:
-- cron: '0 2 * * *'
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * *'
 
 permissions:
-contents: write
+  contents: write
 
 jobs:
-build:
-runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-```
-steps:
-  - uses: actions/checkout@v4
+    steps:
+      - uses: actions/checkout@v4
 
-  - uses: actions/setup-python@v5
-    with:
-      python-version: '3.12'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
 
-  - run: pip install requests
+      - run: pip install requests
 
-  - run: python generate.py
+      - run: python generate.py
 
-  - run: |
-      git config user.name "github-actions"
-      git config user.email "github-actions@github.com"
+      - run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
 
-      git add ru.rsc
-      git commit -m "update geoip" || exit 0
-      git push
-```
+          git add ru.rsc
+          git commit -m "update geoip" || exit 0
+          git push

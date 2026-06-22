@@ -14,5 +14,5 @@ with open("ru.rsc", "w") as f:
             continue
 
         f.write(
-            f'add list=ru address={net} comment="GeoIP-RU"\n'
+            f'/ip firewall address-list add list=ru address={net}\n'
         )

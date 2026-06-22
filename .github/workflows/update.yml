@@ -12,25 +12,23 @@ jobs:
 build:
 runs-on: ubuntu-latest
 
+```
 steps:
-  - name: Checkout
-    uses: actions/checkout@v4
+  - uses: actions/checkout@v4
 
-  - name: Setup Python
-    uses: actions/setup-python@v5
+  - uses: actions/setup-python@v5
     with:
       python-version: '3.12'
 
-  - name: Install requests
-    run: pip install requests
+  - run: pip install requests
 
-  - name: Generate file
-    run: python generate.py
+  - run: python generate.py
 
-  - name: Commit and push
-    run: |
+  - run: |
       git config user.name "github-actions"
       git config user.email "github-actions@github.com"
+
       git add ru.rsc
       git commit -m "update geoip" || exit 0
       git push
+```

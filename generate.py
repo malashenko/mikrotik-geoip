@@ -5,7 +5,7 @@ url = "https://raw.githubusercontent.com/ipverse/rir-ip/master/country/ru/ipv4-a
 data = requests.get(url, timeout=30).text.splitlines()
 
 with open("ru.rsc", "w") as f:
-    f.write("/ip firewall address-list remove [find list=RU]\n")
+    f.write("/ip firewall address-list remove [find list=ru]\n")
 
     for net in data:
         net = net.strip()
@@ -14,5 +14,5 @@ with open("ru.rsc", "w") as f:
             continue
 
         f.write(
-            f'add list=RU address={net} comment="GeoIP-RU"\n'
+            f'add list=ru address={net} comment="GeoIP-RU"\n'
         )

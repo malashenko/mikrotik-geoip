@@ -1,9 +1,9 @@
 name: Update RU GeoIP
 
 on:
+workflow_dispatch:
 schedule:
 - cron: '0 2 * * *'
-workflow_dispatch:
 
 permissions:
 contents: write
@@ -19,25 +19,18 @@ steps:
   - name: Setup Python
     uses: actions/setup-python@v5
     with:
-      python-version: "3.12"
+      python-version: '3.12'
 
   - name: Install requests
     run: pip install requests
 
-  - name: Generate ru.rsc
+  - name: Generate file
     run: python generate.py
 
   - name: Commit and push
     run: |
-      git config user.name "github-actions[bot]"
-      git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
+      git config user.name "github-actions"
+      git config user.email "github-actions@github.com"
       git add ru.rsc
-
-      if git diff --cached --quiet; then
-        echo "No changes"
-        exit 0
-      fi
-
-      git commit -m "update geoip"
+      git commit -m "update geoip" || exit 0
       git push

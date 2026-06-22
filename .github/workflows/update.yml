@@ -41,4 +41,3 @@ steps:
 
       git commit -m "update geoip"
       git push
-```

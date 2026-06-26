@@ -6738,7 +6738,6 @@
 /ip firewall address-list add list=ru address=193.36.35.0/24
 /ip firewall address-list add list=ru address=193.36.41.0/24
 /ip firewall address-list add list=ru address=193.36.56.0/22
-/ip firewall address-list add list=ru address=193.36.91.0/24
 /ip firewall address-list add list=ru address=193.37.36.0/24
 /ip firewall address-list add list=ru address=193.37.68.0/22
 /ip firewall address-list add list=ru address=193.37.134.0/24

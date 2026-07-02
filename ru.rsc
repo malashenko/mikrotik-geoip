@@ -4452,6 +4452,8 @@
 /ip firewall address-list add list=ru address=141.105.32.0/20
 /ip firewall address-list add list=ru address=141.105.48.0/21
 /ip firewall address-list add list=ru address=141.105.64.0/21
+/ip firewall address-list add list=ru address=141.133.128.0/22
+/ip firewall address-list add list=ru address=141.133.136.0/22
 /ip firewall address-list add list=ru address=141.133.176.0/20
 /ip firewall address-list add list=ru address=141.133.192.0/18
 /ip firewall address-list add list=ru address=141.136.112.0/21

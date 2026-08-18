@@ -7907,6 +7907,8 @@
 /ip firewall address-list add list=ru address=195.130.214.0/24
 /ip firewall address-list add list=ru address=195.130.216.0/24
 /ip firewall address-list add list=ru address=195.131.0.0/16
+/ip firewall address-list add list=ru address=195.133.56.0/23
+/ip firewall address-list add list=ru address=195.133.60.0/23
 /ip firewall address-list add list=ru address=195.133.216.0/22
 /ip firewall address-list add list=ru address=195.133.224.0/19
 /ip firewall address-list add list=ru address=195.135.204.0/22

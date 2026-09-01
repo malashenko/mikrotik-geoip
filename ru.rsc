@@ -4408,6 +4408,7 @@
 /ip firewall address-list add list=ru address=131.222.134.0/23
 /ip firewall address-list add list=ru address=131.222.202.0/24
 /ip firewall address-list add list=ru address=132.243.176.0/21
+/ip firewall address-list add list=ru address=132.243.184.0/24
 /ip firewall address-list add list=ru address=134.0.96.0/20
 /ip firewall address-list add list=ru address=134.0.112.0/21
 /ip firewall address-list add list=ru address=134.19.128.0/21
@@ -7553,7 +7554,6 @@
 /ip firewall address-list add list=ru address=194.146.119.0/24
 /ip firewall address-list add list=ru address=194.146.200.0/22
 /ip firewall address-list add list=ru address=194.146.240.0/22
-/ip firewall address-list add list=ru address=194.147.28.0/22
 /ip firewall address-list add list=ru address=194.147.32.0/22
 /ip firewall address-list add list=ru address=194.147.48.0/22
 /ip firewall address-list add list=ru address=194.147.114.0/23

@@ -6885,7 +6885,6 @@
 /ip firewall address-list add list=ru address=193.105.53.0/24
 /ip firewall address-list add list=ru address=193.105.59.0/24
 /ip firewall address-list add list=ru address=193.105.65.0/24
-/ip firewall address-list add list=ru address=193.105.72.0/24
 /ip firewall address-list add list=ru address=193.105.92.0/23
 /ip firewall address-list add list=ru address=193.105.94.0/24
 /ip firewall address-list add list=ru address=193.105.100.0/24

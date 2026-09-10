@@ -3242,7 +3242,6 @@
 /ip firewall address-list add list=ru address=91.230.252.0/23
 /ip firewall address-list add list=ru address=91.231.8.0/24
 /ip firewall address-list add list=ru address=91.231.16.0/23
-/ip firewall address-list add list=ru address=91.231.64.0/23
 /ip firewall address-list add list=ru address=91.231.94.0/23
 /ip firewall address-list add list=ru address=91.231.96.0/24
 /ip firewall address-list add list=ru address=91.231.112.0/22

@@ -4430,6 +4430,7 @@
 /ip firewall address-list add list=ru address=136.234.120.0/22
 /ip firewall address-list add list=ru address=136.234.124.0/23
 /ip firewall address-list add list=ru address=136.234.126.0/24
+/ip firewall address-list add list=ru address=137.22.144.0/20
 /ip firewall address-list add list=ru address=138.16.128.0/21
 /ip firewall address-list add list=ru address=138.16.136.0/23
 /ip firewall address-list add list=ru address=138.16.140.0/22
